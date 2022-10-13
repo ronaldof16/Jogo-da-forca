@@ -18,7 +18,8 @@ section {
     border: none;
     background: rgb(71, 71, 221);
     color: white;
-    width: 197px;
+    width: 245px;
+    font-size: 18px;
 }
 
 .adicionar {
@@ -27,4 +28,5 @@ section {
     border: 1px solid rgb(71, 71, 221);
     background: none;
     color: rgb(71, 71, 221);
+    font-size: 18px
 }

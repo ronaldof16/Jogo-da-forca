@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+::placeholder {
+    color: rgb(71, 71, 221);
+}
+
+.input {
+    border: none;
+    font-size: 32px;
+    position: absolute;
+    height: 48px;
+    width: 413px;
+    left: 376px;
+    top: 256px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    align-items: flex-start;
+    width: 688px;
+    height: 67px;
+    left: 376px;
+    top: 701px;
+}
