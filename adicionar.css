@@ -1,59 +1,43 @@
 h1 {
     text-align: center;
     text-transform: uppercase;
+    font-size: 3em;
 }
 
 ::placeholder {
     color: rgb(71, 71, 221);
 }
 
+section {
+    margin-left: 300px;
+}
+
 .input {
+    margin: 100px 0 200px;
     border: none;
     font-size: 32px;
-    position: absolute;
-    width: 413px;
-    height: 48px;
-    left: 376px;
-    top: 256px;
 }
 
-
-img {
-    position: absolute;
-    left: 376px;
-    top: 470px;
-    display: flex;
-}
-
-p {
-    position: absolute;
-    left: 376px;
-    top: 480px;
-    font-size: 12px;
-}
-
-.botoes {
-    display: flex;
-    position: absolute;
-    left: 376px;
-    top: 550px;
+.observacao {
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .salvar {
     padding: 24px;
-    height: 67px;
     border: none;
     border-radius: 24px;
     background: rgb(71, 71, 221);
     color: white;
-    width: 332px;
+    width: 300px;
+    font-size: 18px;
 }
 
 .cancelar {
     padding: 24px;
-    height: 67px;
     border: 1px solid rgb(71, 71, 221);
     border-radius: 24px;
     color: rgb(71, 71, 221);
-    width: 332px;
+    width: 300px;
+    font-size: 18px;
 }
