@@ -31,3 +31,16 @@ section {
     color: rgb(71, 71, 221);
     font-size: 18px
 }
+
+.adicionar a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    font-size: 13px;
+}
+
+footer a {
+    text-decoration: none;
+}

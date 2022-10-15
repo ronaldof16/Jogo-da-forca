@@ -41,3 +41,13 @@ section {
     width: 300px;
     font-size: 18px;
 }
+
+footer {
+    text-align: center;
+    font-size: 13px;
+    padding-top: 20px;
+}
+
+footer a {
+    text-decoration: none;
+}
