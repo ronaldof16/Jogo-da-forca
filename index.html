@@ -7,31 +7,30 @@
     <title>Jogo da forca</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body>  
     <header>
         <h1>Jogo da Forca</h1>
     </header>
-
+    
     <main>
         <section id="div-desaparece" class="botoes-home">
             <a href="#forca">
-              <input class="btn-iniciar" type="submit" value="Iniciar Jogo" id="iniciar-jogo" onclick="iniciaJogo()" >
+                <!--<input class="btn-iniciar" type="submit" value="Iniciar Jogo" id="iniciar-jogo" onclick="iniciaJogo()">-->
+                <button class="comecar" onclick="iniciaJogo()">Começar o jogo</button>
             </a>
+            <button class="adicionar"><a href="adicionar.html">Adicionar nova palavra</a></button>
         </section>
         <section id="div-aparece-forca" class="canvas">
-            <canvas id="forca" height="860px" width="1200"></canvas>
+            <canvas id="forca" height="860px" width="1200px"></canvas>
         </section>
-
-        <!--<section>
-            <button class="adicionar"><a href="adicionar.html">Adicionar nova palavra</a></button>
-        </section>-->
     </main>
 
     <footer>&copy; Copyright 2022 - Desenvolvido por 
         <a href="https://github.com/ronaldof16/Jogo-da-forca.git">Ronaldo Fernando</a>
     </footer>
 
-    <link rel="stylesheet" href="script.js">
-    <link rel="stylesheet" href="canvas.js">
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="canvas.js"></script>
+
 </body>
 </html>
