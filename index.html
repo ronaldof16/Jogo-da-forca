@@ -13,10 +13,18 @@
     </header>
 
     <main>
-        <section>
-                <button class="comecar">Começar a jogar</button>
-                <button class="adicionar"><a href="adicionar.html">Adicionar nova palavra</a></button>
+        <section id="div-desaparece" class="botoes-home">
+            <a href="#forca">
+              <input class="btn-iniciar" type="submit" value="Iniciar Jogo" id="iniciar-jogo" onclick="iniciaJogo()" >
+            </a>
         </section>
+        <section id="div-aparece-forca" class="canvas">
+            <canvas id="forca" height="860px" width="1200"></canvas>
+        </section>
+
+        <!--<section>
+            <button class="adicionar"><a href="adicionar.html">Adicionar nova palavra</a></button>
+        </section>-->
     </main>
 
     <footer>&copy; Copyright 2022 - Desenvolvido por 
@@ -24,5 +32,6 @@
     </footer>
 
     <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="canvas.js">
 </body>
 </html>
