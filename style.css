@@ -1,3 +1,5 @@
+
+
 h1 {
     left: 35%;
     text-transform: uppercase;
@@ -39,7 +41,7 @@ h1 {
     text-decoration: none;
 }
 
-.canvas {
+canvas {
     margin-left: 2.5em;
     width: 1024px;
     height: 800px;
