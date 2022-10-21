@@ -31,6 +31,7 @@ function desenharLinhas() {
 function escreverLetraCorreta(index){
     tela.font = "bold 52px Inter"
     tela.lineCap = "round"
+    tela.lineJoin="round"
     tela.fillStyle = "#0A3871"
     tela.lineWidth = 6
     let largura= 600/palavraSecreta.length
@@ -41,6 +42,7 @@ function escreverLetraCorreta(index){
 function escreverLetraIncorreta(letra, erros){
   tela.font = "bold 40px Inter"
   tela.lineCap = "round"
+  tela.lineJoin="round"
   tela.fillStyle = "#0A3871"
   tela.lineWidth = 6
   tela.fillText(letra,520 + (40 *(10 - erros)),720,40 )
@@ -90,4 +92,24 @@ function desenharForca(pontos) {
     }
     tela.stroke()
     tela.closePath()
+  }
+
+  function exibirDerrota() {
+    tela.font = ' bold 42px Inter';
+    tela.lineWidth=6
+    tela.lineCap="round"
+    tela.lineJoin="round"
+    tela.fillStyle="red"
+    tela.fillText("Fim de jogo!",930,320)
+  }
+  
+  function exibirVitoria() {
+    tela.font = 'bold 42px Inter';
+    tela.lineWidth=6
+    tela.lineCap="round"
+    tela.lineJoin="round"
+    tela.fillStyle="green"
+    tela.fillText("Ganhou,",950,320)
+    tela.fillText("Parabéns!",930,360)
+    setTimeout( recarregar , 1000)
   }
