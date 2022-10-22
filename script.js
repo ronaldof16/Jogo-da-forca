@@ -106,40 +106,7 @@ function verificarLetraClicada(key) {
   }
 
   //inicia o jogo
-function iniciaJogo() {
-  document.getElementById("div-desaparece").style.display = 'none';
-  desenharCanvas(); 
-  escolherPalavraSecreta();
-  desenharLinhas()
-
-  document.onkeydown = (e) => {
-    let letra = e.key.toUpperCase()
-    if (letrasIncorretas.length <= numeroDeErros) {
-      if (!verificarLetraClicada(e.key) && verificarLetra(e.keyCode)) {
-        if (palavraSecreta.includes(letra)) {
-          adicionarLetraCorreta(palavraSecreta.indexOf(letra))
-          for (let i = 0; i < palavraSecreta.length; i++) {
-            if (palavraSecreta[i] === letra) {
-              escreverLetraCorreta(i)
-              verificarVencedor(letra)
-            }
-          }
-        }
-        else {
-          if (!verificarLetraClicada(e.key) && !verificarVencedor(letra)) return
-          desenharForca(erros)
-          verificarFimDeJogo(letra)
-        }
-      }
-    }
-    else {
-      alert('Você atingiu o limíte de letras incorretas')
-    }
-  };
-}
-
-  
-/*function iniciaJogo(){
+  function iniciaJogo(){
    
     document.getElementById("div-desaparece").style.display = 'none';
     escolherPalavraSecreta()
@@ -166,7 +133,7 @@ function iniciaJogo() {
         }
       }
 
-    }*/
+    }
   
   
 
